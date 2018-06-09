@@ -14,10 +14,12 @@ const Header = props => (
   <div className="page-header" style={styles.heading}>
     <div className="row">
       <h1 className="col-md-4">
-        <strong>Clicky Game!</strong>
+        <strong>Click a Box to Begin!</strong>
       </h1>
       <h1 className="col-md-4">Click an Image to Begin!</h1>
-      <h1 className="col-md-4 scoreBug" />
+      <h2 className="col-md-4 scoreBug">
+        Right Guesses: {props.right} | High Score: {props.highScore}
+      </h2>
     </div>
   </div>
 );

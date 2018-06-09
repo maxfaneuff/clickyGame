@@ -30,6 +30,8 @@ const Card = props => (
             src={key}
             alt="yankeePic"
             key={index}
+            data-id={index}
+            onClick={props.makeGuess}
           />
         </div>
       ))}{" "}
