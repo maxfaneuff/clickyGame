@@ -32,6 +32,8 @@ const Card = props => (
             key={index}
             data-id={index}
             onClick={props.makeGuess}
+            onMouseOver={props.mouseOver}
+            onMouseOut={props.mouseOut}
           />
         </div>
       ))}{" "}
